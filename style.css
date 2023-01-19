@@ -93,5 +93,35 @@ button:hover{
     background:grey;
     color:white;
     padding : 0 1.6rem;
-    
+}
+
+@media screen and (max-width:800px){
+    .modal .card{
+        flex-direction:column;
+        width:80vw;
+        text-align:center;
+    }
+
+    .modal .card .brand{
+        width:15rem;
+        height:15rem;
+        border-radius:50%;
+        overflow:hidden;
+        margin-top:4rem; 
+    }
+
+    .modal .card form{
+        display:block;
+    }
+
+    .modal .card form input[type="email"],
+    .modal .card form input[type="email"]::placeholder {
+        text-align:center;
+    }
+    .modal .card form input[type="submit"]{
+        display:block;
+        width:100%;
+        padding : 1rem 0;
+        margin-top:0.6rem;
+    }
 }
