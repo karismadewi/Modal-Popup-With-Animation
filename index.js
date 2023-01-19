@@ -1,6 +1,7 @@
 const openBtn= document.querySelector('button');
 const closeBtn= document.querySelector('#close');
 const modal= document.querySelector('.modal');
+const form= document.querySelector('form');
 
 // open modal on click
 
@@ -27,3 +28,15 @@ modal.addEventListener('click', function(e){
         closeModal(); 
     }
 });
+
+// thank you after add email and click the subscribe button
+form.addEventListener('submit', submitForm);
+
+function submitForm() {
+    const card = document.querySelector('.card');
+    card.innerHTML = "<h1>Thank you for your support!</h1>";
+    setTimeout(() => {
+        closeModal();
+    }, 3000);
+}
+
